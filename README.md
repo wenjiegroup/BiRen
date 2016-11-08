@@ -42,10 +42,12 @@ USAGE:
 STEP 1: Data preprocessing
 
 Example run:
-python dataEncode.py example genome.fa EvolutionaryConservation.bw
+
+	python dataEncode.py example genome.fa EvolutionaryConservation.bw
 
 
 step1 must contain the following files:
+
 	dataEncode.py
 	transformTo1Kformat.py
 	genome.fa
@@ -63,16 +65,20 @@ step1 must contain the following files:
 In this step, the predict target should be .BED format (example.bed), each region should be large than 200bp.
 
 genome.fa is the Human(hg19) whole genome seuqnece which can be obtained from UCSC Genome Browser,please merge all chromosome and rename "genome.fa",or you can download from:
+
 	ftp://123.56.134.57/data/genome.fa
 
 EvolutionaryConservation.bw was taken from the vertebrate phastCons44way track from USCS Genome Browser, or you can download from: 
+
 	ftp://123.56.134.57/data/EvolutionaryConservation.bw
 
 deepsea.cpu is DeepSEA trained model, you can download from:
+
 	ftp://123.56.134.57/data/deepsea.cpu
 
 
 output files will be under "example" folder:
+
 	example_data.npy
 	example_mask.npy  
 
@@ -80,18 +86,22 @@ output files will be under "example" folder:
 STEP 2: Prediction procedure
 
 step2 must contain the following files:
+	
 	BiRen.py
 	BiRen_trained_model.npy
 
 Example run:
-python BiRen.py example
+
+	python BiRen.py example
 
 output files will be under ./example :
 	example.out
 
 Here is a minnimal example:
-chr20	2719208	2719789	0.220106445764
-chr5	2112055	2113430	0.859481014407
+
+	chr20	2719208	2719789	0.220106445764
+
+	chr5	2112055	2113430	0.859481014407
 
 The four columns are chromosome, start position, end position and enhancer probabiliy score.
 
