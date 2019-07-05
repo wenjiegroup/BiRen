@@ -63,7 +63,14 @@ step1 must contain the following files:
 
 
 In this step, the predict target should be .BED format (example.bed), each region should be large than 200bp.
+#############################update#######################################################
+We are sorry that the ftp server is temporarily down. Due to the network issue, we can only upload the data to the baidu netdisk.
+URL: https://pan.baidu.com/s/1kOBwR8iMsbcbm5x4Kk6NzA PASSWORD: 5spg
 
+We will try to setup another server as soon as possible.
+
+
+###########################################################################################
 genome.fa is the Human(hg19) whole genome seuqnece which can be obtained from UCSC Genome Browser,please merge all chromosome and rename "genome.fa",or you can download from:
 
 	ftp://123.56.134.57/data/genome.fa
@@ -76,7 +83,7 @@ deepsea.cpu is DeepSEA trained model, you can download from:
 
 	ftp://123.56.134.57/data/deepsea.cpu
 
-
+###############################################################################################
 output files will be under "example" folder:
 
 	example_data.npy
